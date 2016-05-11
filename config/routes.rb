@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   get 'contact' => "home#contact"
   get 'aboutus' => "home#aboutus"
 
