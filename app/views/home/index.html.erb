@@ -2,8 +2,26 @@
 <p>Find me in app/views/home/index.html.erb</p>
 
 <p>Choose your free dates</p>
-<form> 
+<%= form_for AvailableTime.new do |f| %>
+	<%= f.date_field :from %> 
+	<%= f.date_field :to %>
+	<%= f.submit "Submit" %>
+<% end %>
+
+<!-- <form url="/available-time/new"> 
 	<input type="date" name ="free"> from </input> 	
 	<input type="date" name ="free"> to </input>
 	<input type ="submit"></input>
-</form>
+</form> -->
+
+<% if user_signed_in? %>
+	<ul>
+	<% @available_times.each do |available_time| %>
+		<li>
+			<%= available_time.user.try(:email) %>
+			<%= available_time.from %>
+			<%= available_time.to %>
+		</li>
+	<% end %>
+	</ul>
+<% end %>

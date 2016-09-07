@@ -3,6 +3,7 @@ class HomeController < ApplicationController
 	before_filter :authenticate_user!, only:[:contact]
 
   def index
+  	@available_times = AvailableTime.all
   end
 
   def contact
@@ -10,5 +11,4 @@ class HomeController < ApplicationController
 
   def aboutus
   end
-
 end
