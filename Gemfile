@@ -36,11 +36,12 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-gem 'debugger', group: [:development, :test]
+# gem 'debugger', group: [:development, :test]
 
 gem 'bootstrap-generators', '~> 3.3.4'
 gem 'devise'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
+  gem 'pry'
 end

@@ -1,8 +1,6 @@
-require 'debugger'
 
 class AvailableTimesController < ApplicationController
 	def create
-		debugger
 		available_time = AvailableTime.new(params.require(:available_time).permit(:from, :to))
 		available_time.user = current_user
 		if available_time.save
