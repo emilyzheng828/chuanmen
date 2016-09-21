@@ -11,4 +11,7 @@ class HomeController < ApplicationController
 
   def aboutus
   end
+
+  def templates
+  end
 end
