@@ -23,9 +23,13 @@
 			<%= available_time.to %>
 		</li>
 	<% end %>
+
 	</ul>
 <% end %>
 
 <%= month_calendar do |date| %>
   <%= date %>
+  <% if Date.today == date %>
+  	<h1>today</h1>
+  <% end %>
 <% end %>
