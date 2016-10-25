@@ -41,7 +41,7 @@ gem 'spring',        group: :development
 gem 'bootstrap-generators', '~> 3.3.4'
 gem 'devise'
 
-gem "simple_calendar", "~> 2.0"
+gem "simple_calendar", "~> 2.2.0"
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
