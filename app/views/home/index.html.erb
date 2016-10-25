@@ -27,9 +27,8 @@
 	</ul>
 <% end %>
 
-<%= month_calendar do |date| %>
+<%= month_calendar events: @available_times do |date, available_times| %>
   <%= date %>
-  <% if Date.today == date %>
-  	<h1>today</h1>
-  <% end %>
+
+
 <% end %>
