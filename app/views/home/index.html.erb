@@ -1,7 +1,7 @@
 <h1>Home#index</h1>
 <p>Find me in app/views/home/index.html.erb</p>
 
-<p>Choose your free dates</p>
+<b>Choose your free dates</b>
 <%= form_for AvailableTime.new do |f| %>
 	<%= f.date_field :from %> 
 	<%= f.date_field :to %>
@@ -29,6 +29,11 @@
 
 <%= month_calendar events: @available_times do |date, available_times| %>
   <%= date %>
+  <%= available_times.map(&:user).map(&:name) %>
 
+<p class = "available_number">
+  <%= available_times.map(&:user).count %>
+</p>
 
+<%= "out of #{User.count} available" %>
 <% end %>

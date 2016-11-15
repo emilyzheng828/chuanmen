@@ -16,4 +16,5 @@
 
  *= require simple_calendar
  */
-.has-events {background-color: green}
+.has-events {background-color: green} 
+.available_number { color: pink } 
