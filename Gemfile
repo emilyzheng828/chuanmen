@@ -41,6 +41,7 @@ gem 'spring',        group: :development
 gem 'bootstrap-generators', '~> 3.3.4'
 gem 'devise'
 
+gem "paperclip"
 gem "simple_calendar", "~> 2.2.0"
 
 group :development, :test do
