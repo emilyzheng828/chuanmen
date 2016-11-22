@@ -1,7 +1,7 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-
-<b>Choose your free dates</b>
+<div>
+<h1 class = "flip" style = "display:inline-block"> 串门 Meet for Real</h1>
+</div>
+<b class = "fadeIn">When will you be free to meet?</b>
 <%= form_for AvailableTime.new do |f| %>
 	<%= f.date_field :from %> 
 	<%= f.date_field :to %>
@@ -29,8 +29,11 @@
 
 <%= month_calendar events: @available_times do |date, available_times| %>
   <%= date %>
-  <%= available_times.map(&:user).map(&:name) %>
-
+  <% available_times.each do |available_time| %>
+   <li>
+   <%= link_to available_time.user.name, user_path(available_time.user), style: "color: black" %>
+  </li>
+<% end %>
 <p class = "available_number">
   <%= available_times.map(&:user).count %>
 </p>
