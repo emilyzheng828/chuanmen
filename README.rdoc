@@ -13,13 +13,12 @@ The purpose of this app is to utilise the technology we have to make it easy for
 
 * Install postgresql Mac OS x
 
-[brew install postgres](https://launchschool.com/blog/how-to-install-postgresql-on-a-mac)
+ [brew install postgres](https://launchschool.com/blog/how-to-install-postgresql-on-a-mac)
 
-*  Bundle install
-bundle install`
+ bundle install
+ 
+ bundle exec rake db:create db:migrate
 
-* Database initialization
 
-`bundle exec rake db:create db:migrate`
 
 
