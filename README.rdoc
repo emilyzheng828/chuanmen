@@ -4,26 +4,22 @@ Hi Everyone, this is an app called [串门](http://www.baike.com/wiki/%E4%B8%B2%
 
 The purpose of this app is to utilise the technology we have to make it easy for people to meet for real.
 
-Things you may want to cover:
-
+== Getting started
+ 
 * Ruby version
+ Ruby version 2.2.3
 
 * System dependencies
 
-* Configuration
+* Install postgresql Mac OS x
 
-* Database creation
+[brew install postgres](https://launchschool.com/blog/how-to-install-postgresql-on-a-mac)
+
+*  Bundle install
+bundle install`
 
 * Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`bundle exec rake db:create db:migrate`
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
