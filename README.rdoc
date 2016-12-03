@@ -13,7 +13,7 @@ The purpose of this app is to utilise the technology we have to make it easy for
 
 * Install postgresql Mac OS x
 
- [brew install postgres](https://launchschool.com/blog/how-to-install-postgresql-on-a-mac)
+ brew install postgres
 
  bundle install
  
