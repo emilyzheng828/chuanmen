@@ -1,7 +1,8 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hi Everyone, this is an app called [串门](http://www.baike.com/wiki/%E4%B8%B2%E9%97%A8),meaning Dropin/Stopby. It is a culture which is disappearing now. In the old days, people go and visit their relatives, friends and neighbours frequently for chatting, catching up, having meals togehter ...etc, with no appointment needed.
+
+The purpose of this app is to utilise the technology we have to make it easy for people to meet for real.
 
 Things you may want to cover:
 
